@@ -14,6 +14,11 @@ import { CategoriesComponent } from './categories/categories.component';
 import { TemplatesComponent } from './templates/templates.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CategoryItemComponent } from './categories/category-item/category-item.component';
+import { CustomTableComponent } from './shared/custom-table/custom-table.component';
+import { TableItemComponent } from './shared/custom-table/table-item/table-item.component';
+import { TableHeadComponent } from './shared/custom-table/table-head/table-head.component';
+import { TableBodyComponent } from './shared/custom-table/table-body/table-body.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { RouterModule, Routes } from '@angular/router';
     PlanningComponent,
     CategoriesComponent,
     TemplatesComponent,
-    HeaderComponent
+    HeaderComponent,
+    CategoryItemComponent,
+    CustomTableComponent,
+    TableItemComponent,
+    TableHeadComponent,
+    TableBodyComponent
   ],
   imports: [
     BrowserModule,

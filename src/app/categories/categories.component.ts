@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
+  mockData = [
+    {
+      id: '1',
+      name: 'Żywność',
+    },
+    {
+      id: '2',
+      name: 'Rozrywka',
+    },
+    {
+      id: '3',
+      name: 'Rachunki',
+    },
+  ];
   constructor() { }
 
   ngOnInit() {
