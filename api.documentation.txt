@@ -1,0 +1,16 @@
+
+GET /categories
+
+{
+    totalCount: number,
+    pageCount: number,
+    pageCurrent: number,
+    items:
+    [
+        {
+            id: number,
+            name: string,
+            description: string,
+        }
+    ]
+}

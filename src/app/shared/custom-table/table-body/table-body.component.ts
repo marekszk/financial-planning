@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'table-body',
@@ -11,9 +11,15 @@ export class TableBodyComponent implements OnInit {
   @Input() widths: Array<number>;
   @Input() actions: Array<string>;
 
+  @Output() deleting: EventEmitter<number> = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  private deleteItem( i ) {
+    this.deleting.emit( i );
   }
 
 }

@@ -39,4 +39,8 @@ export class CategoriesComponent implements OnInit {
   ngOnInit() {
   }
 
+  private deleteItem( i ) {
+    console.log( i );
+  }
+
 }

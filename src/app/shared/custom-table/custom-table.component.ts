@@ -1,4 +1,4 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, OnChanges, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'custom-table',
@@ -11,6 +11,8 @@ export class CustomTableComponent implements OnChanges {
   @Input() keys: Array<string>;
   @Input() widths: Array<number>;
   @Input() actions: Array<any>;
+
+  @Output() deleting: EventEmitter<number> = new EventEmitter<number>();
 
   values: Array<Array<string>>;
   ifActions: boolean;
@@ -27,4 +29,7 @@ export class CustomTableComponent implements OnChanges {
     this.ifActions = this.actions.length > 0;
   }
 
+  private deleteItem( i ) {
+    this.deleting.emit( i );
+  }
 }

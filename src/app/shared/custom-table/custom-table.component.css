@@ -1,5 +1,6 @@
 
 table-head {
     border-bottom: solid #000 2px;
-    padding-bottom: 5px; 
+    padding: 5px;
+    font-size: 20px; 
 }

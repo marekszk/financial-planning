@@ -1,4 +1,4 @@
-import { Component, OnChanges, Input, AfterViewInit } from '@angular/core';
+import { Component, OnChanges, Input, AfterViewInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'table-item',
@@ -14,6 +14,8 @@ export class TableItemComponent implements OnChanges, AfterViewInit {
   @Input() widths: Array<number>;
   @Input() actions: Array<any>;
   @Input() i: number;
+
+  @Output() deleting: EventEmitter<number> = new EventEmitter<number>();
   data: Array<string>;
 
   constructor() { }
@@ -35,7 +37,7 @@ export class TableItemComponent implements OnChanges, AfterViewInit {
   makeAction( actionType: string ){
     switch ( actionType ) {
       case 'delete':
-
+        this.deleteItem();
         break;
       case 'edit':
 
@@ -43,5 +45,13 @@ export class TableItemComponent implements OnChanges, AfterViewInit {
       default:
         console.error('Wrong action type!');
     }
+  }
+
+  private deleteItem() {
+    this.deleting.emit(this.i);
+  }
+
+  private editItem() {
+
   }
 }
