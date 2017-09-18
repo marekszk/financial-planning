@@ -1,7 +1,14 @@
 
 <div 
-  class="td"
+  class="table-head__td"
   *ngFor="let key of keys"
 >
   {{key}}
+</div>
+
+<div 
+  class="table-head__td"
+  *ngIf="ifActions"
+>
+  Akcje
 </div>

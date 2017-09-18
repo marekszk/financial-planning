@@ -5,6 +5,9 @@
     margin: 5% 0%;
 }
 
+.content{
+    width: 77%;
+}
 nav{
     display: flex;
     flex-direction: column;

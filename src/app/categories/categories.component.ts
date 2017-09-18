@@ -21,6 +21,19 @@ export class CategoriesComponent implements OnInit {
       name: 'Rachunki',
     },
   ];
+
+  mockActions = [
+    {
+      actionType: 'delete',
+      name: 'Usuń',
+      color: '#e0301e',
+    },
+    {
+      actionType: 'edit',
+      name: 'Edytuj',
+      color: '#eb8c00',
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

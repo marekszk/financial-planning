@@ -9,8 +9,11 @@ export class CustomTableComponent implements OnChanges {
 
   @Input() data: Array<any>;
   @Input() keys: Array<string>;
+  @Input() widths: Array<number>;
+  @Input() actions: Array<any>;
 
   values: Array<Array<string>>;
+  ifActions: boolean;
 
   constructor() { }
 
@@ -21,6 +24,7 @@ export class CustomTableComponent implements OnChanges {
       }
     );
 
+    this.ifActions = this.actions.length > 0;
   }
 
 }

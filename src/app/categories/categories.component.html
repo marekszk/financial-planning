@@ -1,6 +1,12 @@
-<div class="categories">
-  <button>Dodaj</button>
+<div class="container">
+  <button
+    class="categories__add-button"
+  >Dodaj</button>
   
+  <custom-table 
+    [data]="mockData" 
+    [keys]="['Id', 'Nazwa']" 
+    [widths]="[30, 40, 30]"
+    [actions]="mockActions"
+  ></custom-table>  
 </div>
-
-<custom-table [data]="mockData" [keys]="['Id', 'Nazwa']"></custom-table>  

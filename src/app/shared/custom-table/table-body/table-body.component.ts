@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TableBodyComponent implements OnInit {
 
   @Input() values: Array<Array<string>>;
+  @Input() widths: Array<number>;
+  @Input() actions: Array<string>;
 
   constructor() { }
 
