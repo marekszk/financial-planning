@@ -25,11 +25,14 @@ export class TableItemComponent implements OnChanges, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.widths[this.widths.length - 1] -= 1;
     const tdList = document.querySelectorAll('.table-item__td-' + this.i);
     Array.from(tdList).forEach(
       (element, i) => {
-        element.setAttribute('style', `width: ${this.widths[i]}%`);
+        let lastElem = 0;
+        if ( i === this.widths.length - 1 ) {
+          lastElem = -1;
+        }
+        element.setAttribute('style', `width: ${this.widths[i] + lastElem}%`);
       }
     );
   }

@@ -17,11 +17,14 @@ export class TableHeadComponent implements OnChanges, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.widths[this.widths.length - 1] -= 1;
     const tdList = document.querySelectorAll('.table-head__td');
     Array.from(tdList).forEach(
       (element, i) => {
-        element.setAttribute('style', `width: ${this.widths[i]}%`);
+        let lastElem = 0;
+        if ( i === this.widths.length - 1 ) {
+          lastElem = -1;
+        }
+        element.setAttribute('style', `width: ${this.widths[i] + lastElem}%`);
       }
     );
   }

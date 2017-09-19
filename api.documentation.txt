@@ -12,5 +12,29 @@ GET /categories
             name: string,
             description: string,
         }
+        ...
     ]
+}
+
+POST /categories
+
+{
+    name: string,
+    description: string,
+}
+
+PUT /categories/{id}
+
+{
+    id: number,
+    name: string,
+    description: string,
+}
+
+GET /categories/{id}
+
+{
+    id: number,
+    name: string,
+    description: string,
 }

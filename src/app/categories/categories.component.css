@@ -3,13 +3,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
+
 custom-table {
-    width: 100%;
+    width: 80%;
 }
 
 .categories__add-button{
-    align-self: flex-start; 
-}
+    align-self: flex-start;
+    text-align: center;
+    background-color: #080;
+    color: #fff;
+    width: 50px;
+    padding: 10px 5px;
+    margin-right: 15px;
+    font-weight: 500;
+    opacity: .85;
+  }
+  
+  .categories__add-button:hover {
+    opacity: 1;
+  }

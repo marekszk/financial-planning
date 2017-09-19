@@ -40,7 +40,11 @@ export class CategoriesComponent implements OnInit {
   }
 
   private deleteItem( i ) {
-    console.log( i );
+    this.mockData = this.mockData.filter(
+      (element, index) => {
+        return i !== index;
+      }
+    )
   }
 
 }
