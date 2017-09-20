@@ -1,0 +1,43 @@
+
+ === git ===
+ 
+git fetch - pobiera wszystkie zdalne branch'e
+git branch - wyświetla Twojego aktualnego branch'a
+git branch -a - wszystkie branch'e
+git pull - ściągna zmiany ze zdalnego branch'a
+git checkout <nazwa branch'a> - zmienia branch'a 
+git checkout -b <nazwa branch'a> - tworzy branch'a 
+git push origin <nazwa branch'a> - wypycha branch'a
+git add <file name>
+git commit -m '<title>' -m '<description>'
+git merge <branch name> - dołączasz branch'a do swojego (scalasz zmiany)
+
+ === git flow ===
+
+przechodzimy na develop
+dociągamy najnowszą wersję ( git pull )
+tworzymy nowy branch którego nazwa zaczyna się od 'feature_'
+
+*robisz zadanie* (dodajesz i kommitujesz co jakiś czas)
+
+wypychasz na zdalne repo
+przechodzisz na developa
+dociągamy najnowszą wersję ( git pull )
+przechodzisz na swój branch
+dociągasz develop'a ( git merge )
+wypychasz merge'a
+
+ === work flow ===
+
+kończysz zadanie
+oddajesz do review
+poprawiasz kod po review
+oddajesz do review dopóki osoba robiąca review nie zaakceptuje Twoich zmian
+
+
+ === node flow ===
+
+npm install
+ng serve
+// ng build --prod (co jakiś czas sprawdzać czy nie wali błędami)
+

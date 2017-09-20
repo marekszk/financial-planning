@@ -1,0 +1,62 @@
+
+1 - 2 - 3 - 5 - 8 - 13 - 20 - 40 - 100
+
+Jest tylko jeden użytkownik.
+
+Menu
+    Dashboard
+    Przychody
+    Wydatki
+    Planowanie
+    Kategorie
+    Szablony
+    ma możliwość globalnej zmiany miesiąca i roku (z każdego miejsca) - 1
+
+Logowanie
+    ma możliwość zalogowania się - 5
+Dashboard
+    widzi raport o realizacji planu budżetu
+        widzi ile zostało zł do końca miesiąca - 1
+        widzi procentową wartość realizacji planu - 1
+        widzi listę procentowych wartości planu poszczególnych kategorii i podkategorii - 5
+    ma możliwość przejścia do widoku dodania wydatku / szybki wydatek - 3
+Przychody
+    widzi sumę przychodów w danym miesiącu - 1
+    widzi listę przychodów - 2
+    ma możliwość dodania przychodu i wyboru jego kategorii - 3
+    ma możliwość edycji przychodu - 3
+    ma możliwość usunięcia przychodu - 1
+Wydatki
+    widzi listę wydatków - 8
+        ma możliwość filtrowania po kategoriach, dacie wydatku (min lub maks)
+        ma możliwość sortowania po dacie wydatku rosnąco i malejąco
+    ma możliwość edytowania wydatku - 3
+    ma możliwość dodania wydatku - 3
+    ma możliwość usunięcia wydatku - 1
+Planowanie
+    widzi sumę budżetu zaplanowane i niezaplanowanego w zł i % - 2
+    widzi listę kategorii i wartość zaplanowaną dla danej kategorii - 5
+        widzi wartość procentową zaplanowanych podkategorii w ramach danej kategorii
+    ma możliwość zmiany wartości zaplanowanej dla danej kategorii albo podkategorii - 2
+    ma możliwość zaimportowania szablonu - 3
+    ma możliwość zapisania jako szablon - 3
+Kategorie
+    ma możliwość dodania kategorii - 3
+    ma możliwość edycji kategorii - 3
+    ma możliwość usunięcia kategorii - 1
+    widzi listę kategorii - 5
+        ma możliwość wyświetlenia listy podkategorii
+    ma możliwość dodania podkategorii - 3
+    ma możliwość edycji podkategorii - 3
+    ma możliwość usunięcia podkategorii - 1
+Szablony
+    widzi listę szablonów - 2
+    ma możliwość zobaczenia szczegółów szablonu wraz z edycją - 3
+    ma możliwość dodania szablonu miesięcznego planu budżetu - 3
+        widzi wartość zaplanowaną dla danej kategorii
+        ma możliwość zmiany wartości zaplanowanej dla danej kategorii
+        ma możliwość dodać podkategorię
+        widzi wartość procentową zaplanowanych podkategorii w ramach danej kategorii
+
+
+SUMA WAG: 78 

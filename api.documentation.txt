@@ -38,3 +38,4 @@ GET /categories/{id}
     name: string,
     description: string,
 }
+
