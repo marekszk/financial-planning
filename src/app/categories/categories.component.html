@@ -1,0 +1,13 @@
+<div class="container"
+  *ngIf="!loadingData"
+  >  
+  <custom-table 
+    [data]="data" 
+    [headers]="['Id', 'Nazwa', 'Typ']" 
+    [widths]="[20, 30, 20, 30]"
+    [actions]="mockActions"
+    (deleting)="deleteItem($event)"
+    (editing)="editItem($event)"
+    (adding)="addNewCategory($event)"
+  ></custom-table>  
+</div>

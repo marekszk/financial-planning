@@ -1,0 +1,14 @@
+<div class="container">
+  <table-item
+    *ngFor="let values of values; let i = index"
+    [item]="values"
+    [widths]="widths"
+    [i]="i"
+    [actions]="actions"
+    [keys]="keys"
+    (deleting)="deleteItem($event)"
+    (editing)="editItem($event)"
+  >
+    
+  </table-item>
+</div>

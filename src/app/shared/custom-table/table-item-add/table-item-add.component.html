@@ -1,0 +1,14 @@
+<div class="item-adding">
+  <div class="item-adding__id"></div>
+  <div class="item-adding__field field" *ngFor="let key of keys">
+    <input 
+      type="text" 
+      class="field__input" 
+      [(ngModel)]="item[key]"
+      [ngClass]="{'field__input--error': formSubmitted && item[key] === '' }">
+  </div>
+  <button 
+      class="item-adding__button add-button"
+      (click)="addNewItem()"
+  >Dodaj</button>
+</div>

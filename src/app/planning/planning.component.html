@@ -1,0 +1,19 @@
+<div class="container">
+  
+  <custom-table 
+    [data]="mockData" 
+    [headers]="['Id', 'Kategoria', 'Kwota']" 
+    [widths]="[20, 30, 20, 30]"
+    [actions]="mockActions"
+    (deleting)="deleteItem($event)"
+    (editing)="editItem($event)"
+    (adding)="addNewPlan($event)"
+  ></custom-table>  
+</div>
+
+<div class="sum">
+  <div class="sum__header">Do zaplanowania</div>
+  <div class="sum__header">Zaplanowane</div>
+  <div class="sum__row">{{toPlanValue}}</div>
+  <div class="sum__row" [ngClass]="{'sum__row--error': toPlanValue < plannedValue}">{{plannedValue}}</div>
+</div>

@@ -1,0 +1,19 @@
+
+<table-head 
+    [headers]="table.$headers" 
+    [widths]="table.$widths" 
+    [ifActions]="table.areActions"
+></table-head>
+<table-body 
+    [values]="table.$values" 
+    [widths]="table.$widths"
+    [actions]="table.$actions"
+    [keys]="table.$keys"
+    (deleting)="deleteItem($event)"
+    (editing)="editItem($event)"
+></table-body>
+<table-item-add
+    [widthsInp]="table.$widths"
+    [keys]="table.$keys"
+    (adding)="addItem($event)"
+></table-item-add>

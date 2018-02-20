@@ -1,0 +1,28 @@
+
+.sum {
+    width: 500px;
+    margin: 70px auto;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__header {
+        font-weight: 700;
+        background: #aaa;
+        width: 250px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    &__row {
+        background: #ddd;
+        width: 250px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        &--error {
+            color: red;
+        }
+    }
+}

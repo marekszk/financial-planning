@@ -1,0 +1,12 @@
+<div class="container">
+  
+  <custom-table 
+    [data]="mockData" 
+    [headers]="['Id', 'Kategoria', 'Kwota', 'Opis']" 
+    [widths]="[10, 20, 20, 30, 20]"
+    [actions]="mockActions"
+    (deleting)="deleteItem($event)"
+    (editing)="editItem($event)"
+    (adding)="addNewExpense($event)"
+  ></custom-table>  
+</div>
